@@ -1,0 +1,22 @@
+# Credentials (NEVER commit)
+ga4_credentials.json
+
+# Compiled Python
+__pycache__/
+*.pyc
+
+# Claude Code settings
+.claude/
+
+# Audit outputs & temp files
+sheets/
+docs/kasparro-test-brand*.xlsx
+docs/skinq*
+docs/Brand_Data_Extraction*.md
+docs/System_Design_Brand_Extraction.md
+
+# Temp files (but allow setup guides)
+*.txt
+*.json
+!docs/GA4_Setup_Guide_For_Clients.txt
+!docs/GSC_Setup_Guide_For_Clients.txt

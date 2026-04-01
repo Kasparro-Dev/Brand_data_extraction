@@ -1,0 +1,125 @@
+================================================================================
+GOOGLE SEARCH CONSOLE (GSC) SETUP GUIDE FOR CLIENT
+================================================================================
+
+Time needed: ~2 minutes
+Technical knowledge required: None
+Access level: Read-only (Viewer role)
+
+
+--------------------------------------------------------------------------------
+WHAT KASPARRO NEEDS FROM YOU
+--------------------------------------------------------------------------------
+
+Kasparro's service account email:
+
+  kasparro-ga4-reader-kasparro-p@kasparro-audit-pillar-b.iam.gserviceaccount.com
+
+This is a Google service account -- Kasparro uses this to securely access your
+GSC data. You simply add this email as a Viewer on your GSC property.
+
+
+================================================================================
+STEP 1: LOG INTO GOOGLE SEARCH CONSOLE
+================================================================================
+
+1. Go to: https://search.google.com/search-console
+
+2. Select your GSC property (the one connected to your website)
+
+   If your website is a domain (e.g., yoursite.com):
+   - Select "Domain" and enter your domain (e.g., yoursite.com)
+   - You may need to verify ownership via DNS, HTML file, or tag
+
+   If your website is on a subdomain or path (e.g., shop.yoursite.com):
+   - Select "URL prefix" and enter your full URL
+   - Verify via one of the methods Google offers
+
+
+================================================================================
+STEP 2: GO TO SETTINGS
+================================================================================
+
+1. In the left sidebar, click the gear icon "Settings"
+
+
+================================================================================
+STEP 3: GO TO USERS AND PERMISSIONS
+================================================================================
+
+1. In the Settings page, click "Users and permissions"
+
+2. You'll see a list of people who have access to this property
+
+
+================================================================================
+STEP 4: ADD KASPARRO'S SERVICE ACCOUNT
+================================================================================
+
+1. Click the "Add user" button
+
+2. Enter this exact email address:
+
+   kasparro-ga4-reader-kasparro-p@kasparro-audit-pillar-b.iam.gserviceaccount.com
+
+3. Set Permission to "Viewer"
+   (This is read-only. Kasparro cannot modify any data in your GSC.)
+
+4. Click "Add" or "Invite"
+
+
+================================================================================
+STEP 5: FIND YOUR GSC PROPERTY URL
+================================================================================
+
+Kasparro needs your GSC property URL in the correct format.
+
+1. Look at the URL of your property in GSC
+
+2. The format is: sc-domain:yourdomain.com
+   (e.g., sc-domain:skinq.com)
+
+3. If your property is https://search.google.com/search-console/settings/owners?resource_id=sc-domain:yourdomain.com
+   Then your GSC site URL is: sc-domain:yourdomain.com
+
+4. Copy this format -- you need it when sharing with Kasparro
+
+
+================================================================================
+STEP 6: SHARE WITH KASPARRO
+================================================================================
+
+Send Kasparro the following:
+
+  - GSC Property URL in format: sc-domain:yourdomain.com
+    (e.g., sc-domain:skinq.com)
+
+  IMPORTANT: Use "sc-domain:" prefix, NOT "https://"
+  Wrong:  https://yourdomain.com
+  Right:  sc-domain:yourdomain.com
+
+
+================================================================================
+WHAT HAPPENS NEXT
+================================================================================
+
+Once Kasparro receives your GSC property URL:
+
+- Kasparro will use their service account to access your GSC data
+- Kasparro will pull search clicks, impressions, CTR, and position data
+- Kasparro will generate your brand audit report
+
+No changes will be made to your GSC -- this is READ-ONLY access only.
+
+You can remove access at any time by going to:
+Search Console -> Settings -> Users and permissions -> Find Kasparro's email -> Remove
+
+note:
+
+1. If your website has multiple subdomains (e.g., shop.yoursite.com and
+   blog.yoursite.com), each needs to be added separately in GSC.
+
+2. Your GSC property must be verified before Kasparro can access it.
+   If you haven't verified ownership yet, do that first.
+
+================================================================================

@@ -1,0 +1,106 @@
+================================================================================
+GOOGLE ANALYTICS 4 (GA4) SETUP GUIDE FOR KASPARRO
+================================================================================
+
+Time needed: ~2 minutes
+Technical knowledge required: None
+Access level: Read-only (Viewer role)
+
+
+--------------------------------------------------------------------------------
+WHAT KASPARRO NEEDS FROM YOU
+--------------------------------------------------------------------------------
+
+Kasparro's service account email:
+
+  kasparro-ga4-reader-kasparro-p@kasparro-audit-pillar-b.iam.gserviceaccount.com
+
+This is a Google service account -- Kasparro uses this to securely access your
+GA4 data. You simply add this email as a Viewer on your GA4 property.
+
+
+================================================================================
+STEP 1: LOG INTO YOUR GA4 PROPERTY
+================================================================================
+
+1. Go to: https://analytics.google.com
+
+2. Select your GA4 property (the one connected to your Shopify store)
+
+3. Click "Admin" (the gear icon in the bottom left)
+
+
+================================================================================
+STEP 2: GO TO PROPERTY ACCESS MANAGEMENT
+================================================================================
+
+1. In the Admin panel, click "Property access management"
+   (It's under the "Property" column)
+
+2. You'll see a list of people who have access to this property
+
+
+================================================================================
+STEP 3: ADD KASPARRO'S SERVICE ACCOUNT
+================================================================================
+
+1. Click the "+" (Add) button at the top right
+
+2. Select "Add users"
+
+3. Enter this exact email address:
+
+   kasparro-ga4-reader-kasparro-p@kasparro-audit-pillar-b.iam.gserviceaccount.com
+
+4. Set Role to "Viewer"
+   (This is read-only. Kasparro cannot modify any data in your GA4.)
+
+5. Click "Add" or "Invite"
+
+
+================================================================================
+STEP 4: FIND YOUR GA4 PROPERTY ID
+================================================================================
+
+Kasparro needs your GA4 Property ID to pull the data.
+This is different from your GA4 Measurement ID (G-XXXXXXXX).
+
+1. Still in the Admin panel
+
+2. Go to "Property settings" (under the Property column)
+
+3. Look for "Property ID" -- it will be a number like 123456789
+
+4. Copy this number
+
+
+================================================================================
+STEP 5: SHARE WITH KASPARRO
+================================================================================
+
+Send Kasparro the following:
+
+  - GA4 Property ID (e.g., 123456789)
+    Found at: Admin -> Property settings -> Property ID
+
+  - Property Name (optional, helps Kasparro identify your property)
+    Found at: Admin -> Property settings -> Property name
+
+
+================================================================================
+WHAT HAPPENS NEXT
+================================================================================
+
+Once Kasparro receives your Property ID:
+
+- Kasparro will use their service account to access your GA4 data
+- Kasparro will pull traffic, sessions, demographics, and location data
+- Kasparro will generate your brand audit report
+
+No changes will be made to your GA4 -- this is READ-ONLY access only.
+
+You can remove access at any time by going to:
+Admin -> Property access management -> Find Kasparro's email -> Remove access
+
+
+================================================================================
